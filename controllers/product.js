@@ -66,3 +66,25 @@ exports.updateProduct = async (req, res, next) => {
         next(error)
     }
 }
+
+
+//delete varieties
+exports.deleteVariety = async (req, res, next) => {
+    const prodId = req.body.prodId;
+    const indexToDelete = req.body.varietyIndex
+    try {
+        const product = await Product.findByPk(prodId);
+        if(!product){
+            throwError({ message: 'Product not found', status: 404} );
+        }
+        const newProductVarieties = product.product_varieties.filter((val, index) => index !== indexToDelete);
+        product.product_varieties = newProductVarieties;
+        const data = await product.save();
+        res.json(data)
+
+
+    } catch (error) {
+        next(error);
+    }
+}
+

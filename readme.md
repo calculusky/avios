@@ -9,3 +9,5 @@
 3) https://aviose.herokuapp.com/api/management/add-product     -->     Accept POST REQUEST for Adding new product
 
 4) https://aviose.herokuapp.com/api/management/update-product  -->     Accept PUT REQUEST for updating a product
+
+5)  https://aviose.herokuapp.com/api/management/delete-product  -->     Accept DELETE REQUEST for deleting a product with product Id and variety index
