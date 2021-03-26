@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const baseURL = 'http://localhost:8080';
+const baseURL = 'https://aviose.herokuapp.com';
 
 const instance = axios.create({
     baseURL: baseURL
