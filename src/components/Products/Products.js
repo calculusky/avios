@@ -6,7 +6,7 @@ const Products = (props) => {
     const { product: { product_name, id, product_varieties } } = props;
     return ( 
         <div className="card">
-            <Link to={`/products/${id}`}>{product_name}>
+            <Link to={`/products/${id}`}>
                 <img className="medium" src={product_varieties[0].images[0]} alt={product_varieties[0].images[0]}/>
             </Link>
             <div className="card-body">
