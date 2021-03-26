@@ -2,10 +2,10 @@
 
 ## This backend consists of the following API Endpoints
 
-1) https://aviose.herokuapp.com/get-products    -->     Accept GET REQUEST for fetching all products
+1) https://aviose.herokuapp.com/api/management/get-products    -->     Accept GET REQUEST for fetching all products
 
-2) https://aviose.herokuapp.com/get-product     -->     Accept GET REQUEST for fetching single product and its varieties
+2) https://aviose.herokuapp.com/api/management/get-product     -->     Accept GET REQUEST for fetching single product and its varieties
 
-3) https://aviose.herokuapp.com/add-product     -->     Accept POST REQUEST for Adding new product
+3) https://aviose.herokuapp.com/api/management/add-product     -->     Accept POST REQUEST for Adding new product
 
-4) https://aviose.herokuapp.com/update-product  -->     Accept PUT REQUEST for updating a product
+4) https://aviose.herokuapp.com/api/management/update-product  -->     Accept PUT REQUEST for updating a product
