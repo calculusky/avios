@@ -1,13 +1,123 @@
+
+* {
+  box-sizing: border-box;
+}
+
+#root {
+  height: 100%;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Roboto', 'Helvetica', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+}
+
+ul, li {
+  list-style: none;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: 'header' 'main' 'footer';
+  grid-template-rows: 5rem 1fr 10rem;
+  grid-template-columns: 1fr;
+  height: 100%;
+}
+
+header {
+  color: #fff;
+  background-color: #fc6c04;
+  margin: 0;
+}
+
+main {
+  margin: 0;
+}
+
+footer {
+  color: #fff;
+  margin: 0;
+  background-color: #fc6c04;
+}
+
+
+.row {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.row.center {
+  justify-content: center;
+}
+
+select {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 0.1rem #a4a4a4 solid;
+  font-size: 1.1rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.primary {
+  background-color: #fc6c04;
+  color: #fff;
+  padding: 0.5rem;
+  font-size: 1.3rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.block {
+  width: 100%;
+}
+.primary:hover {
+  background-color: #a14504;
+}
+
+/* navbar */
+.navbar {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.navbar-brand {
+  font-size: 2rem;
+}
+.navbar-brand a {
+  color: #fff;
+}
+
+.navbar-link {
+  font-size: 1.3rem;
+}
+
+.navbar-link ul {
+  display: flex;
+}
+
+.navbar-link ul li {
+  display: inline-block;
+  margin-right: 3rem;
+}
+.navbar-link ul li:last-child {
+  margin-right: 0;
+}
+
+.navbar-link ul li a {
+  color: #fff;
 }

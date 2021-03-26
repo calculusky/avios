@@ -1,0 +1,32 @@
+
+
+.product-container {
+    padding: 2rem;
+}
+h1 {
+    text-align: center;
+}
+
+.description {
+    background-color: #ffd0af;
+    padding: 1rem;
+    border-radius: 5px;
+    margin: 2rem 0;
+}
+
+.title {
+    font-size: 1.4rem;
+    border-bottom: 1px solid rgb(104, 103, 103);
+    padding-bottom: 0.4rem;
+}
+
+.content {
+    padding-top: 0.7rem;
+}
+
+.varieties {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
